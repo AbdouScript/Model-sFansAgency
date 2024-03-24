@@ -1,0 +1,68 @@
+header[role="banner"] {
+    text-align: center;
+  }
+  
+  #logo-main {
+    display: block;
+    margin: 0 auto 20px; /* Centrer le logo horizontalement et ajouter une marge en bas */
+  }
+  
+  #navbar-primary.navbar-default {
+    background: transparent;
+    border: none;
+  }
+  
+  /* CSS pour la barre de navigation lorsque le menu est déroulé */
+  #navbar-primary-collapse {
+    text-align: center;
+  }
+  
+  #navbar-primary .navbar-nav { 
+    width: 80%;
+    margin: 0;
+    padding-left: 0; /* Retirer le padding par défaut des listes non ordonnées */
+  }
+  
+  #navbar-primary .nav-item {
+    display: inline-block;
+    float: none;
+  }
+  
+  #navbar-primary .nav-link {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  /* Assurez-vous que la barre de navigation s'effondre correctement sur les petits écrans */
+  @media (max-width: 991px) {
+    #navbar-primary .navbar-nav {
+      float: none;
+    }
+  }
+
+footer {
+  background-color: black; /* Fond noir */
+  color: white; /* Texte blanc */
+}
+
+footer a {
+  color: white; /* Liens en blanc */
+}
+
+footer a:hover {
+  color: #dddddd; /* Légère variation de blanc au survol */
+}
+
+footer .border-bottom {
+  border-color: #333333; /* Couleur de bordure plus foncée pour une meilleure visibilité */
+}
+
+/* Ce style s'applique au texte de droits d'auteur en bas du footer */
+footer .text-center.p-4 {
+  background-color: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent pour la distinction */
+}
+
+/* Pour les icônes FontAwesome */
+footer .fab {
+  color: white; /* Icônes en blanc */
+}
