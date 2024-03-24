@@ -1,3 +1,36 @@
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 18px; /* Ajustez la taille du texte du logo */
+  }
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Ajustez la taille du texte des liens */
+  }
+}
+@media (max-width: 576px) {
+  .offcanvas-body {
+      padding: 1rem; /* Réduit le padding à l'intérieur du menu pour les petits écrans */
+  }
+  .offcanvas-body .nav-link {
+      font-size: 14px; /* Réduit la taille de la police pour les liens */
+  }
+}
+.navbar.bg-body-tertiary {
+  background-color: transparent !important;
+}
+.offcanvas {
+  max-width: 100%; /* S'assure que le menu ne dépasse pas la largeur de l'écran */
+}
+.offcanvas-body .nav-link, .offcanvas-body form {
+  white-space: nowrap; /* Optionnel: Empêche le texte de passer à la ligne si nécessaire */
+  overflow: hidden; /* Cache tout débordement de contenu */
+  text-overflow: ellipsis; /* Ajoute des ellipses pour le texte qui déborde */
+}
+
+
   .highlight {
     color: red;
   }
@@ -15,11 +48,17 @@
 
   .line-connector {
     flex-grow: 1;
-    margin: 0 20px;
+    margin: 0 10px;
     height: 2px;
     position: relative;
     background-color: #ccc; /* Couleur de fond de la ligne */
     overflow: hidden; /* Permet de masquer l'animation débordant de la div */
+  }
+
+  @media (max-width: 768px) {
+    .line-connector {
+      display: none; /* Cache les lignes sur les petits écrans */
+    }
   }
   
   .line-connector::before {
