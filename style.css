@@ -1,42 +1,43 @@
-header[role="banner"] {
-    text-align: center;
+  .highlight {
+    color: red;
+  }
+
+
+  .img-model {
+    transition: filter 0.3s ease-in-out;
   }
   
-  #logo-main {
-    display: block;
-    margin: 0 auto 20px; /* Centrer le logo horizontalement et ajouter une marge en bas */
+  /* Classe à ajouter lors du scroll pour flouter l'image */
+  .blurred {
+    filter: blur(4px);
+  }
+
+
+  .line-connector {
+    flex-grow: 1;
+    margin: 0 20px;
+    height: 2px;
+    position: relative;
+    background-color: #ccc; /* Couleur de fond de la ligne */
+    overflow: hidden; /* Permet de masquer l'animation débordant de la div */
   }
   
-  #navbar-primary.navbar-default {
-    background: transparent;
-    border: none;
+  .line-connector::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    background-color: blue; /* Couleur de l'animation */
+    animation: slideRight 2s linear infinite;
   }
   
-  /* CSS pour la barre de navigation lorsque le menu est déroulé */
-  #navbar-primary-collapse {
-    text-align: center;
-  }
-  
-  #navbar-primary .navbar-nav { 
-    width: 80%;
-    margin: 0;
-    padding-left: 0; /* Retirer le padding par défaut des listes non ordonnées */
-  }
-  
-  #navbar-primary .nav-item {
-    display: inline-block;
-    float: none;
-  }
-  
-  #navbar-primary .nav-link {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  /* Assurez-vous que la barre de navigation s'effondre correctement sur les petits écrans */
-  @media (max-width: 991px) {
-    #navbar-primary .navbar-nav {
-      float: none;
+  @keyframes slideRight {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
     }
   }
 
@@ -65,4 +66,8 @@ footer .text-center.p-4 {
 /* Pour les icônes FontAwesome */
 footer .fab {
   color: white; /* Icônes en blanc */
+}
+
+h1 {
+  color: black;
 }
