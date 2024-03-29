@@ -66,7 +66,7 @@ body {
 
   @media (max-width: 768px) {
     .line-connector {
-      display: none; /* Cache les lignes sur les petits écrans */
+      display: none; /* Cacher les lignes sur les petits écrans */
     }
   }
   

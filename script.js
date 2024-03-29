@@ -18,7 +18,7 @@ function isInViewport(element) {
   );
 }
 
-// Écoute l'événement de scroll
+// Écouter l'événement de scroll
 window.addEventListener('scroll', () => {
   document.querySelectorAll('.img-model').forEach((img) => {
     if (isInViewport(img)) {
