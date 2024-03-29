@@ -1,5 +1,8 @@
 body {
   overflow-x: hidden;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,98,1) 35%, rgba(0,212,255,1) 100%);
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -30,6 +33,12 @@ body {
   text-overflow: ellipsis; /* Ajoute des ellipses pour le texte qui déborde */
 }
 
+
+.carousel-item img {
+  max-width: 75%; /* Ajustez ce pourcentage selon la taille désirée */
+  margin: auto; /* Centre l'image horizontalement */
+  display: block; /* Assure que margin: auto fonctionne correctement */
+}
 
   .highlight {
     color: red;
@@ -107,6 +116,11 @@ footer .fab {
   color: white; /* Icônes en blanc */
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 h1 {
   color: black;
 }
+
