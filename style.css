@@ -56,7 +56,7 @@ body {
 
 
   .line-connector {
-    flex-grow: 1;
+    flex-grow: 1; 
     margin: 0 10px;
     height: 2px;
     position: relative;
