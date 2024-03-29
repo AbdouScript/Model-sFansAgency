@@ -8,6 +8,9 @@
   <!-- Lien CDN de Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,8 +18,9 @@
 
   <nav class="navbar bg-body-tertiary fixed-top">
     <div class="container-fluid ">
-      <a class="navbar-brand" href="#">Models Fans Agency</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <a class="navbar-brand text-light" href="#">Models Fans Agency</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -42,7 +46,8 @@
               <a class="nav-link" href="#notre-methode">Notre méthode</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Pages légales
               </a>
               <ul class="dropdown-menu">
@@ -75,32 +80,76 @@
     </div>
   </section>
 
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-50" src="image/modeles/1.webp" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="image/modeles/2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="image/modeles/3.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="image/modeles/4.webp" alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="image/modeles/5.png" alt="Fifth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="image/modeles/6.jpeg" alt="Sixth slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    </a>
+  </div>
+
   <!-- Section Nos modèles -->
-  <section id="nos-modeles" class="text-center">
+  <!-- <section id="nos-modeles" class="text-center">
     <div class="container py-5">
       <h2 class="py-4">Nos modèles <span>❤️</span></h2>
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
+          <a href="image/modeles/1.webp" data-lightbox="resultats-set" data-title="Modèle 1">
           <img src="image/modeles/1.webp" class="img-model img-fluid rounded mb-3" alt="Modèle 1">
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
+          <a href="image/modeles/2.jpg" data-lightbox="resultats-set" data-title="Modèle 2">
           <img src="image/modeles/2.jpg" class="img-model img-fluid rounded mb-3" alt="Modèle 2">
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
+          <a href="image/modeles/3.jpg" data-lightbox="resultats-set" data-title="Modèle 3">
           <img src="image/modeles/3.jpg" class="img-model img-fluid rounded mb-3" alt="Modèle 3">
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
+          <a href="image/modeles/4.webp" data-lightbox="resultats-set" data-title="Modèle 4">
           <img src="image/modeles/4.webp" class="img-model img-fluid rounded mb-3" alt="Modèle 4">
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
+          <a href="image/modeles/5.png" data-lightbox="resultats-set" data-title="Modèle 5">
           <img src="image/modeles/5.png" class="img-model img-fluid rounded mb-3" alt="Modèle 5">
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
+          <a href="image/modeles/6.jpeg" data-lightbox="resultats-set" data-title="Modèle 6">
           <img src="image/modeles/6.jpeg" class="img-model img-fluid rounded mb-3" alt="Modèle 6">
+          </a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Pourquoi travailler avec nous -->
   <section id="pourquoi-travailler-avec-nous" class="container text-center py-5">
@@ -151,16 +200,24 @@
     <p class="text-center">Des succès tangibles et une satisfaction client inégalée.</p>
     <div class="row">
       <div class="col-3">
-        <img src="image/resultat/1.png" class="img-fluid" alt="Résultat 1">
+        <a href="image/resultat/mymaffiliation.png" data-lightbox="resultats-set" data-title="Résultat 1">
+          <img src="image/resultat/mymaffiliation.png" class="img-fluid" alt="Résultat 1">
+        </a>
       </div>
       <div class="col-3">
-        <img src="image/resultat/2.png" class="img-fluid" alt="Résultat 2">
+        <a href="image/resultat/mymaffiliation.png" data-lightbox="resultats-set" data-title="Résultat 1">
+          <img src="image/resultat/mymaffiliation.png" class="img-fluid" alt="Résultat 2">
+        </a>
       </div>
       <div class="col-3">
-        <img src="image/resultat/3.png" class="img-fluid" alt="Résultat 3">
+        <a href="image/resultat/mymaffiliation.png" data-lightbox="resultats-set" data-title="Résultat 1">
+          <img src="image/resultat/mymaffiliation.png" class="img-fluid" alt="Résultat 3">
+        </a>
       </div>
       <div class="col-3">
-        <img src="image/resultat/4.png" class="img-fluid" alt="Résultat 4">
+        <a href="image/resultat/mymaffiliation.png" data-lightbox="resultats-set" data-title="Résultat 1">
+          <img src="image/resultat/mymaffiliation.png" class="img-fluid" alt="Résultat 4">
+        </a>
       </div>
     </div>
     <!-- Ici, vous pouvez mettre en avant des études de cas ou témoignages -->
@@ -184,32 +241,24 @@
           <p>Expert en developpement, création de tunnel de vente</p>
         </div>
       </div>
-      <!-- Informations additionnelles comme le nombre de modèles accompagnés, etc. -->
-      <div class="row justify-content-center">
-        <div class="my-4">
-          <span class="d-block mb-2">+ de 4 Millions € générés pour nos modèles</span>
-          <span class="d-block mb-2">+ 50 modèles accompagnées</span>
-          <span class="d-block">+ 45000 abonnements obtenus</span>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- Nous rejoindre -->
-  <section id="nous-rejoindre" class="container text-center my-5">
-    <div class="call-to-action p-4"
-      style="background-color:white; border-radius: 8px; position: relative; margin: auto; max-width: 600px;">
-      <h2>Contactez-nous</h2>
-      <p style="font-size: 18px; color:black;">C'est gratuit, tente ta chance ! 😄</p>
-      <a href="https://calendly.com/abdoukichenama/models-fans-agency-appel-de-decouverte" class="btn"
-        style="background-color: black; color: #fff; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-size: 18px;">Prendre
-        mon RDV</a>
-      <!-- La flèche peut être ajoutée via une image ou en utilisant des entités HTML ou CSS pour plus de flexibilité -->
-      <div class="arrow"
-        style="position: absolute; left: 50%; bottom: -20px; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 20px solid #f8f8f8;">
+
+  <!-- Calendly inline widget begin -->
+  <section id="notre-equipe" class="text-center py-5">
+    <h2 class="pb-4">Nous rejoindre</h2>
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/abdoukichenama/models-fans-agency-appel-de-decouverte" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
       </div>
     </div>
   </section>
+  <!-- Calendly inline widget end -->
 
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -267,13 +316,13 @@
               Pages légales
             </h6>
             <p>
-              <a href="#!" class="text-reset">Conditions générales d'utilisation</a>
+              <a href="#!" class="text-reset no-underline">Conditions générales d'utilisation</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Politique de confidentialité</a>
+              <a href="#!" class="text-reset no-underline">Politique de confidentialité</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Cookies</a>
+              <a href="#!" class="text-reset no-underline">Cookies</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -285,13 +334,9 @@
               Nous suivre
             </h6>
             <p>
-              <a href="#!" class="text-reset">Instagram</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Facebook</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">X</a>
+              <a href="https://www.instagram.com/modelsfansagency" class="text-reset no-underline">
+                <i class="bi bi-instagram"></i> Instagram
+              </a>
             </p>
           </div>
           <!-- Grid column -->
@@ -327,6 +372,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
   <script src="script.js"></script>
 </body>
 
