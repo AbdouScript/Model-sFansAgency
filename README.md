@@ -5,7 +5,7 @@
 
 ### 01/04/2024
 
-✔️-Bouton "rejoingnez nous" buggé (corrigé)
+✔️-Bouton "rejoignez nous" buggé (corrigé)
 
 ✔️-CA crédible et différents
 
