@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Models Fans Agency</title>
   <!-- Lien CDN de Bootstrap CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
@@ -37,13 +47,13 @@
               <a class="nav-link" href="#pourquoi-travailler-avec-nous">Pourquoi Nous faire confiance ?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resultats">Résultats des membres</a>
+              <a class="nav-link" href="#carousel-resultat">Résultats des membres</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#notre-equipe">Notre équipe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#notre-methode">Notre méthode</a>
+              <a class="nav-link active fw-bold text-primary" href="#notre-methode">Nous rejoindre</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -75,8 +85,8 @@
           class="highlight">OnlyFans</span> & <span class="highlight">MYM</span>.</h2>
       <h3 class="display 2 p-2">Conception de stratégies sur mesure pour élargir votre base d'abonnés, booster vos
         revenus, et sécuriser votre indépendance financière 🔥</h3>
-      <a href="https://calendly.com/abdoukichenama/models-fans-agency-appel-de-decouverte"
-        class="btn btn-primary btn-lg">Rejoignez-nous</a>
+        <a href="https://calendly.com/d/cpxp-bg8-y3r/appel-de-decouverte"
+        class="btn btn-primary btn-lg bg-primary text-light">Rejoignez-nous</a>
     </div>
   </section>
 
@@ -195,33 +205,63 @@
   </section>
 
   <!-- Résultats -->
-  <section id="resultats" class="container text-center my-5">
+ 
+  
+  <div class="section" id="carousel-resultat">
     <h2 class="text-center">Résultats 📈</h2>
-    <p class="text-center">Des succès tangibles et une satisfaction client inégalée.</p>
-    <div class="row">
-      <div class="col-3">
-        <a href="image/resultat/mymaffiliation.png" data-lightbox="resultats-set" data-title="Résultat 1">
-          <img src="image/resultat/mymaffiliation.png" class="img-fluid" alt="Résultat 1">
-        </a>
-      </div>
-      <div class="col-3">
-        <a href="image/resultat/mymaffiliation.png" data-lightbox="resultats-set" data-title="Résultat 1">
-          <img src="image/resultat/mymaffiliation.png" class="img-fluid" alt="Résultat 2">
-        </a>
-      </div>
-      <div class="col-3">
-        <a href="image/resultat/mymaffiliation.png" data-lightbox="resultats-set" data-title="Résultat 1">
-          <img src="image/resultat/mymaffiliation.png" class="img-fluid" alt="Résultat 3">
-        </a>
-      </div>
-      <div class="col-3">
-        <a href="image/resultat/mymaffiliation.png" data-lightbox="resultats-set" data-title="Résultat 1">
-          <img src="image/resultat/mymaffiliation.png" class="img-fluid" alt="Résultat 4">
-        </a>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+
+                <!-- Carousel Card -->
+                <div class="card card-raised card-carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="image/resultat/7.png"
+                          alt="First slide">
+                          <div class="carousel-caption d-none d-md-block">
+                            
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="image/resultat/3.png" alt="troisième slide">
+                          <div class="carousel-caption d-none d-md-block">              
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="image/resultat/8.png" alt="huitième slide">
+                          <div class="carousel-caption d-none d-md-block">              
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="image/resultat/9.png" alt="septième slide">
+                          <div class="carousel-caption d-none d-md-block">              
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                </div>
+                <!-- End Carousel Card -->
+
+            </div>
+        </div>
     </div>
-    <!-- Ici, vous pouvez mettre en avant des études de cas ou témoignages -->
-  </section>
+</div>
+</div>
 
   <!-- Notre équipe -->
   <section id="notre-equipe" class="text-center py-5">
@@ -229,16 +269,22 @@
     <div class="container">
       <div class="row justify-content-center mb-4">
         <div class="col-md-6">
-          <img src="image/equipe/ilyes.jpg" alt="Hugo" class="img-fluid rounded-circle mb-3"
+          <img src="image/equipe/ilyes.jpg" alt="Ilyes" class="img-fluid rounded-circle mb-3"
             style="width: 120px; height: 120px;">
           <h3>Ilyes 🔨</h3>
           <p>Recrutement, Création de contenu & Community management</p>
         </div>
         <div class="col-md-6">
-          <img src="image/equipe/Abdallah.jpg" alt="Marwan" class="img-fluid rounded-circle mb-3"
+          <img src="image/equipe/Abdallah.jpg" alt="Abdallah" class="img-fluid rounded-circle mb-3"
             style="width: 120px; height: 120px;">
           <h3>Abdallah 🎨</h3>
           <p>Expert en developpement, création de tunnel de vente</p>
+        </div>
+        <div class="col-md-6">
+          <img src="image/equipe/Georges-Emmanuel.jpg" alt="Georges" class="img-fluid rounded-circle mb-3"
+            style="width: 120px; height: 120px;">
+          <h3>Georges 💼</h3>
+          <p>Responsable du développement d'affaires, et de la gestion des biens de l'agence</p>
         </div>
       </div>
     </div>
@@ -373,6 +419,11 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
 
   <script src="script.js"></script>
 </body>
